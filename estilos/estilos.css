@@ -1,3 +1,4 @@
+/* resetando o CSS do meu projeto */
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +15,13 @@ body {
 
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 1px;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 5px;
 }
 
 h1 {
@@ -28,28 +29,28 @@ h1 {
 }
 
 main img {
+    margin-left: 20px;
+    margin-bottom: 20px;
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 0px
-    box-shadow: 0 0 30px gray;
-}
-
-/*p {
+    border: 1px solid rgb(26, 29, 227);
     padding: 0px;
-}*/
+    box-shadow: 0 0 30px gray;
+    float: right;
+}
 
 main {
     max-width: 840px;
 }
+
+p {
+    padding: 0;
+}
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0, / 0.2); /* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: 22rem;
+    color: #333;   
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -57,8 +58,28 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 15px;
+    left: 120px;
+    font-size: 23px;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Seletores de Classe */
+
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgba(32, 29, 29, 0.2); 
+    padding: 1rem;
+    background-color: #eeeeee;
+}
+
+.indentacao {
+    padding-left: 2rem;
 }
