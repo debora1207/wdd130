@@ -3,6 +3,10 @@
     --cor-secundaria: #f4a261;     
     --cor-destaque1: #264653;     
     --cor-destaque2: #e9c46a;  
+    --cor-branco: #fff;
+    --cor-fundo-claro: #f0f0f0;
+    --cor-destaque1-transparente: rgba(38, 70, 83, 0.75); 
+    --sombra-padrao: rgba(0, 0, 0, 0.5);
     --fonte-titulo: "Georgia", "Times New Roman", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -29,20 +33,21 @@ h1, h2 {
     text-align: center;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+p {
+    margin: 8px 0;
+    padding: 0 8px;
 }
 
 /* Header */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
     background-color: var(--cor-destaque1);
     padding: 10px 20px;
     width: 840px;
+    margin: 0 auto;
+    color: var(--cor-destaque2);
 }
 
 header img {
@@ -51,17 +56,29 @@ header img {
 }
 
 header nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 8px 0 0 0;
+    margin: 0;
     padding: 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    flex: 1 1 auto;
+    text-align: center;
 }
 
 header nav a {
     color: var(--cor-destaque2);
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    padding: 8px;
 }
 
 header nav a:hover {
@@ -87,7 +104,7 @@ header nav a:hover {
     text-align: center;
     opacity: 0.7;
     background-color: var(--cor-destaque1);
-    color: #fff;
+    color: var(--cor-branco);
 }
 
 .hero article {
@@ -95,14 +112,14 @@ header nav a:hover {
     bottom: 20px;
     left: 0;
     width: 100%;
-    background-color: rgba(38, 70, 83, 0.75);
-    color: #fff;
+    background-color: var(--cor-destaque1-transparente);
+    color: var(--cor-branco);
     padding: 16px;
     margin: 0;
 }
 
 .hero article p {
-    color: #fff;
+    color: var(--cor-branco);
     margin: 0;
     padding: 0;
 }
@@ -112,7 +129,7 @@ header nav a:hover {
     width: 125px;
     margin-left: 16px;
     border: 2px solid var(--cor-destaque2);
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 8px var(--sombra-padrao);
 }
 
 /* Sections */
@@ -125,26 +142,92 @@ section h2 {
     margin-bottom: 8px;
 }
 
-/* Footer */
-footer {
-    background-color: var(--cor-destaque1);
-    color: var(--cor-destaque2);
-    text-align: center;
+/* História*/
+.historia {
+    background-color: var(--cor-fundo-claro);
+    padding: 24px 16px;
+    margin-top: 24px;
+}
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 16px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.historia-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.historia-grid p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Aventura*/
+.aventura {
     padding: 16px;
     margin-top: 24px;
 }
 
+.aventura-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.aventura-grid figure {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 0;
+}
+
+.aventura-grid figure img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 4px;
+}
+
+.aventura-grid figcaption {
+    font-size: 0.85rem;
+    color: var(--cor-destaque1);
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-destaque1);
+    color: var(--cor-destaque2);
+    padding: 16px;
+    margin-top: 24px;
+}
+
+.footer-conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
 footer p {
     margin: 0;
-    padding: 8px;
+    padding: 0;
+    color: var(--cor-destaque2);
+    text-align: center;
 }
 
 .socialmedia {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 12px;
-    margin: 8px 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -153,6 +236,8 @@ footer p {
 }
 
 .socialmedia  img {
-    width: 600px;
-    height: 600px; 
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 4px; 
 }
