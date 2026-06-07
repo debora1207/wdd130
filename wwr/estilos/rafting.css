@@ -222,7 +222,7 @@ footer p {
     text-align: center;
 }
 
-.socialmedia {
+.redes-sociais {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -231,11 +231,11 @@ footer p {
     padding: 0;
 }
 
-.socialmedia  a {
+.redes-sociais  a {
     text-decoration: none;
 }
 
-.socialmedia  img {
+.redes-sociais  img {
     width: 36px;
     height: 36px;
     object-fit: cover;

@@ -64,7 +64,7 @@
             <h2>Nossa Equipe</h2>
             <div class="equipe-grid">
                 <figure>
-                    <img src="imagens/carlos.jxl" alt="Foto do guia Carlos">
+                    <img src="imagens/carlos.jpg" alt="Foto do guia Carlos">
                     <figcaption>
                         <strong>Carlos Souza</strong><br>
                         Guia Chefe
@@ -78,7 +78,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="imagens/pedro.jpg" alt="Foto do guia Pedro">
+                    <img src="imagens/pedro.avif" alt="Foto do guia Pedro">
                     <figcaption>
                         <strong>Pedro Martins</strong><br>
                         Coordenador de Passeios
@@ -100,18 +100,18 @@
                 <fieldset>
                     <legend>Finalidade da mensagem:</legend>
 
-                    <label>
-                        <input type="radio" name="finalidade" value="consulta" required>
+                    <label for="consulta">
+                        <input type="radio" id="consulta" name="finalidade" value="consulta" required>
                         Consulta Geral
                     </label>
 
-                    <label>
-                        <input type="radio" name="finalidade" value="reserva">
+                    <label for="reserva">
+                        <input type="radio" id="reserva" name="finalidade" value="reserva">
                         Pergunta sobre Reserva
                     </label>
 
-                    <label>
-                        <input type="radio" name="finalidade" value="sugestao">
+                    <label for="sugestao">
+                        <input type="radio" id="sugestao" name="finalidade" value="sugestao">
                         Sugestão de Site
                     </label>
                 </fieldset>
@@ -120,8 +120,8 @@
                 <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem aqui..."
                     required></textarea>
 
-                <label class="newsletter">
-                    <input type="checkbox" name="newsletter" value="sim">
+                <label for="newsletter" class="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
                     Quero receber a newsletter mensal
                 </label>
 
@@ -134,7 +134,7 @@
     <footer>
         <div class="footer-conteudo">
             <p>© 2026 Aventura Rafting | Debora Queiroz</p>
-            <nav class="socialmedia">
+            <nav class="redes-sociais">
                 <a href="https://facebook.com" target="_blank">
                     <img src="imagens/facebook.jpg" alt="Nos siga no Facebook">
                 </a>
