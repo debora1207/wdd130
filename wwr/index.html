@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós | Aventura Rafting</title>
+    <title>Página Inicial | Aventura Rafting</title>
     <meta name="description"
-        content="Conheça a Aventura Rafting: história, missão e guias experientes para uma aventura inesquecível nas corredeiras. Venha se aventurar!">
+        content="Aventura Rafting: experiências inesquecíveis nas corredeiras com guias certificados. Venha se aventurar!">
     <meta name="author" content="Debora Queiroz">
     <link rel="stylesheet" href="estilos/rafting.css">
 </head>
@@ -23,30 +23,47 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <!-- Hero -->
         <div class="hero">
-            <img src="imagens/raftinghero.jpg" alt="Grupo fazendo rafting">
+            <img src="imagens/raftinghero.jpg" alt="Grupo fazendo rafting nas corredeiras">
             <h1>Aventura Rafting</h1>
             <div class="hero-info">
                 <img src="imagens/clientefeliz.jpg" alt="Clientes felizes após o rafting">
-                <p>Nossa missão é conectar pessoas à natureza por meio de experiências seguras e inesquecíveis.
-                    Valorizamos o respeito à
-                    natureza. Venha se aventurar!</p>
+                <p>Viva a emoção das corredeiras com segurança e diversão! Guias certificados, equipamentos
+                    de alto padrão e roteiros incríveis esperam por você e sua família.</p>
             </div>
         </div>
+
+        <!-- Chamada para ação -->
+        <section class="chamada-inicial">
+            <h2>Encontre o Passeio Ideal para Você</h2>
+            <p>
+                Temos opções para todos os perfis — de iniciantes a aventureiros experientes.
+                Confira nossos roteiros e reserve o seu!
+            </p>
+            <p>
+                <a href="passeios.html" class="btn-passeios">Ver todos os passeios</a>
+            </p>
+        </section>
+
+        <!-- História -->
         <section class="historia">
-            <h2>History</h2>
+            <h2>Nossa História</h2>
             <div class="historia-grid">
-                <p>A Aventura Rafting começou com um grupo de apaixonados pela natureza e por esportes ao ar livre. Com
-                    o passar do tempo, reunimos uma equipe de guias qualificados, aprimoramos nossos equipamentos.</p>
+                <p>A Aventura Rafting nasceu da paixão pela natureza e pelos esportes ao ar livre. Reunimos
+                    guias qualificados e equipamentos de primeira linha para oferecer a melhor experiência
+                    nas corredeiras.</p>
                 <img src="imagens/história-equipamentos.jpg" alt="Nossa história no Rafting">
-                <p>Construímos uma reputação baseada em segurança e diversão. Hoje, recebemos iniciantes, famílias e
-                    aventureiros experientes para explorar as melhores rotas de corredeiras da região.</p>
+                <p>Construímos uma reputação baseada em segurança e diversão. Hoje recebemos iniciantes,
+                    famílias e aventureiros experientes para explorar as melhores rotas da região.</p>
             </div>
         </section>
 
+        <!-- Aventuras -->
         <section class="aventura">
-            <h2>Adventure Awaits You!</h2>
+            <h2>Nossas Aventuras</h2>
             <div class="aventura-grid">
                 <figure>
                     <img src="imagens/corredeira-inicial.jpg" alt="Salto do Rio Negro">
@@ -57,7 +74,7 @@
                     <figcaption>Corredeira do Rio Paranapanema</figcaption>
                 </figure>
                 <figure>
-                    <img src="imagens/corredeira-linda.jpg" alt="Vista Paranorâmica">
+                    <img src="imagens/corredeira-linda.jpg" alt="Vista Panorâmica">
                     <figcaption>Linda vista Panorâmica</figcaption>
                 </figure>
                 <figure>
@@ -69,6 +86,20 @@
                     <figcaption>Corredeira do Rio Tietê</figcaption>
                 </figure>
             </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="formulario">
+            <h2>Receba Nossas Novidades</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
         </section>
     </main>
 

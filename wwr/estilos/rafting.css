@@ -107,7 +107,7 @@ header nav a:hover {
     color: var(--cor-branco);
 }
 
-.hero article {
+.hero-info {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -118,13 +118,13 @@ header nav a:hover {
     margin: 0;
 }
 
-.hero article p {
+.hero-info p {
     color: var(--cor-branco);
     margin: 0;
     padding: 0;
 }
 
-.hero article img {
+.hero-info img {
     float: right;
     width: 125px;
     margin-left: 16px;
@@ -417,3 +417,166 @@ footer p {
 .formulario button[type="submit"]:hover {
     background-color: var(--cor-destaque1);
 }
+
+/* ==========================================
+   PÁGINA PASSEIOS
+   ========================================== */
+
+.chamada-passeios {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 28px 16px;
+}
+
+.chamada-passeios h2 {
+    color: var(--cor-destaque2);
+    margin-bottom: 8px;
+}
+
+.chamada-passeios p {
+    color: var(--cor-branco);
+    margin-bottom: 16px;
+}
+
+.btn-contato {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-destaque1);
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--fonte-body);
+    transition: background-color 0.2s;
+}
+
+.btn-contato:hover {
+    background-color: var(--cor-destaque2);
+}
+
+/* Cards dos roteiros */
+.passeios-detalhes {
+    padding: 24px 16px;
+    margin-top: 24px;
+}
+
+.passeio-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    align-items: start;
+    background-color: var(--cor-fundo-claro);
+    border-left: 4px solid var(--cor-secundaria);
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.passeio-card.invertido {
+    grid-template-columns: 1fr 220px;
+}
+
+.passeio-card.invertido img {
+    order: 2;
+}
+
+.passeio-card.invertido .passeio-info {
+    order: 1;
+}
+
+.passeio-card img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 4px;
+}
+
+.passeio-info h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.passeio-info .nivel {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.nivel-facil    { background-color: #c8e6c9; color: #2e7d32; }
+.nivel-moderado { background-color: #fff9c4; color: #f57f17; }
+.nivel-radical  { background-color: #ffcdd2; color: #c62828; }
+
+.passeio-info p {
+    margin: 0 0 8px;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.passeio-info ul {
+    padding-left: 18px;
+    font-size: 0.85rem;
+    color: var(--cor-destaque1);
+}
+
+.passeio-info ul li {
+    margin-bottom: 4px;
+}
+
+/* Tabela */
+.tabela-passeios {
+    padding: 24px 16px;
+    margin-top: 24px;
+    background-color: var(--cor-fundo-claro);
+    border-top: 2px solid var(--cor-secundaria);
+}
+
+.tabela-passeios h2 {
+    margin-bottom: 16px;
+}
+
+.tabela-passeios table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    table-layout: fixed;
+}
+
+.tabela-passeios thead {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    word-wrap: break-word;
+}
+
+.tabela-passeios th:first-child,
+.tabela-passeios td:first-child {
+    text-align: left;
+}
+
+.tabela-passeios tbody tr:nth-child(even) {
+    background-color: #e0ecf1;
+}
+
+.tabela-passeios tbody tr:hover {
+    background-color: #c8dde6;
+}
+
+.tabela-passeios td.nivel-facil    { color: #2e7d32; font-weight: bold; }
+.tabela-passeios td.nivel-moderado { color: #f57f17; font-weight: bold; }
+.tabela-passeios td.nivel-radical  { color: #c62828; font-weight: bold; }
